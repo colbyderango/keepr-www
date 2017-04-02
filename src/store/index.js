@@ -1,7 +1,8 @@
 import axios from 'axios'
+import router from '../router'
 
 let api = axios.create({
-  baseURL: 'https://keeprclone.herokuapp.com/api',
+  baseURL: 'https://keeprclone.herokuapp.com/api/',
   timeout: 2000,
   withCredentials: true
 })
