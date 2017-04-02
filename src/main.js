@@ -7,6 +7,19 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+window.api = axios.create({
+  baseURL: 'https://keeprclone.herokuapp.com/api',
+  timeout: 1000,
+  witheCredentials: true
+})
+
+let socket = io('https://keeprclone.herokuapp.com/api')
+
+socket.on('CONNECTED', function (data) {
+  console.log(data)
+
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
