@@ -3,7 +3,7 @@
         <div class=" navbar navbar-fixed">
             <nav class="N/A transparent">
                 <div class="nav-wrapper ">
-                    <a href="#" class="brand-logo center"><img class="logo" src="../assets/logo.jpg"></a>
+
                     <ul v-if="!this.$root.$data.store.state.user._id" class="right">
                         <li>
                             <router-link to="login">Login</router-link>
